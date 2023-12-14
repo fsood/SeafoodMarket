@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:padding="16dp"
+    tools:context=".dashboardseller.PostSeafood">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:background="@drawable/custom_rectangle" />
+
+        <ImageButton
+            android:id="@+id/backB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:letterSpacing="0.025"
+            android:fontFamily="@font/playfairdisplaymediumitalic"
+            android:text="@string/post_seafood"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/spinnerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/view"
+            android:gravity="center"
+            android:background="#b6b6b6"
+            android:layout_marginTop="30dp">
+
+            <Spinner
+                android:id="@+id/spinnerFishTypes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/fish_types"
+                android:minHeight="58dp" />
+
+            <Spinner
+                android:id="@+id/spinnerSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/source_options"
+                android:minHeight="58dp"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextVendorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerlayout"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:textColor="@color/black"
+            android:hint="@string/vendor_name"
+            android:fontFamily="@font/playfairdisplayregular"
+            android:inputType=""
+            android:minHeight="48dp"
+            android:textColorHint="#616161" />
+
+        <EditText
+            android:id="@+id/editTextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextVendorName"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:textColor="@color/black"
+            android:fontFamily="@font/playfairdisplayregular"
+            android:hint="@string/location"
+            android:inputType=""
+            android:minHeight="48dp"
+            android:textColorHint="#616161" />
+
+        <RelativeLayout
+            android:id="@+id/setlocationlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextLocation"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/selectedImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:visibility="gone"
+                android:contentDescription="@string/photo_viewed" />
+
+            <Button
+                android:id="@+id/buttonAddPhoto"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/selectedImageView"
+                android:text="@string/add_photo"
+                android:textColor="#1565C0" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editTextPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setlocationlayout"
+            android:layout_marginTop="16dp"
+            android:hint="@string/price"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:fontFamily="@font/playfairdisplayregular"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            tools:ignore="VisualLintTextFieldSize"
+            android:autofillHints="" />
+
+        <!-- Add other UI elements for delivery info, availability, payment methods, phone number, and email with appropriate margins -->
+        <EditText
+            android:id="@+id/editTextDeliveryInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPrice"
+            android:layout_marginTop="16dp"
+            android:hint="@string/delivery_info"
+            android:textColorHint="#757575"
+            android:fontFamily="@font/playfairdisplayregular"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:autofillHints=""
+            android:inputType="" />
+
+        <EditText
+            android:id="@+id/editTextAvailability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextDeliveryInfo"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:hint="@string/availability"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:fontFamily="@font/playfairdisplayregular"
+            android:minHeight="48dp"
+            android:textColorHint="#616161" />
+
+        <LinearLayout
+            android:id="@+id/paymentOptionsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/editTextAvailability"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_methods"
+                android:textColor="#000000"
+                android:fontFamily="@font/playfairdisplaymedium"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerPaymentMethods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#b6b6b6"
+                android:entries="@array/payment_methods"
+                android:minHeight="58dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paymentOptionsLayout"
+            android:layout_marginTop="16dp"
+            android:hint="@string/phone_number"
+            android:fontFamily="@font/playfairdisplayregular"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:minHeight="48dp"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPhoneNumber"
+            android:layout_marginTop="16dp"
+            android:hint="@string/email"
+            android:fontFamily="@font/playfairdisplayregular"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:autofillHints="" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/submit"
+                android:textColor="#1565C0" />
+
+            <Button
+                android:id="@+id/buttonCancel"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/cancel"
+                android:textColor="#1565C0" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

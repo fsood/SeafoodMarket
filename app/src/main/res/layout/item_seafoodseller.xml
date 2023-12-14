@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- seafoodlist for seller -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F0FFFF"
+    android:padding="18dp"
+    android:layout_marginBottom="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0FFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewSeafood"
+                android:layout_width="match_parent"
+                android:layout_height="151dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="1dp"
+                android:contentDescription=""
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_image" />
+
+            <LinearLayout
+                android:id="@+id/textviewlinearlayout"
+                android:layout_width="282dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewSeafood"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="34dp"
+                android:background="#F0FFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewFishType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/playfairdisplaymedium"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <!-- Availability -->
+                <TextView
+                    android:id="@+id/textViewAvailability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/playfairdisplaymedium"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <!-- Price -->
+                <TextView
+                    android:id="@+id/textViewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/playfairdisplaymedium"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <!-- Vendor Name -->
+                <TextView
+                    android:id="@+id/textViewVendorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/playfairdisplaymedium"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

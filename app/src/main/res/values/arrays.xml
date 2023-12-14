@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cleaning_tips_array">
+        <item>Instructions for cleaning a fish: Steps…</item>
+        <item>Instructions for cleaning a fish: Tips and Warnings…</item>
+    </string-array>
+</resources>
+

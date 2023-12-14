@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/img"
+    android:layout_height="match_parent">
+
+
+    <!-- Top bar -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@drawable/custom_rectangle" />
+
+    <ImageButton
+        android:id="@+id/backB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/app_name"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/playfairdisplaymediumitalic"
+        android:layout_centerHorizontal="true"
+        android:letterSpacing="0.025"
+        android:text="@string/make_order"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Make Order content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Quantity (kg)"
+            android:fontFamily="@font/playfairdisplaymedium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- EditText for quantity -->
+        <EditText
+            android:id="@+id/kgEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter quantity in kg"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="#616161" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/playfairdisplaymedium"
+            android:layout_marginTop="16dp"
+            android:text="Delivery Information"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- EditText for delivery information (name, phone, location) -->
+        <EditText
+            android:id="@+id/deliveryInfoEditTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter name"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="#616161" />
+
+        <EditText
+            android:id="@+id/deliveryInfoEditTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter  phone number"
+            android:minHeight="48dp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textColorHint="#616161" />
+        <EditText
+            android:id="@+id/deliveryInfoEditTextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter delivery location"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="#616161" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/playfairdisplaymedium"
+            android:text="Payment Method"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- TextView to display payment method (to be fetched from the database) -->
+        <TextView
+            android:id="@+id/paymentMethodTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/makeOrderButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/playfairdisplaymedium"
+            android:layout_marginEnd="16dp"
+            android:textColor="#1565C0"
+            android:text="Make Order" />
+
+        <Button
+            android:id="@+id/clearOrderButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/playfairdisplaymedium"
+            android:text="Clear Order"
+            android:textColor="#1565C0"/>
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/orderDetailsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/submitOrderButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/submit"
+                android:fontFamily="@font/playfairdisplaymedium"
+                android:textColor="#1565C0" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

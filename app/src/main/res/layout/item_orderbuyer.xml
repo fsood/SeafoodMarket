@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--my orders for buyer-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F0FFFF"
+    android:padding="18dp"
+    android:layout_marginBottom="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0FFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/itemimage"
+                android:layout_width="match_parent"
+                android:layout_height="151dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="1dp"
+                android:contentDescription=""
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_image" />
+
+            <LinearLayout
+                android:id="@+id/textviewlinearlayout"
+                android:layout_width="282dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemimage"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="42dp"
+                android:background="#F0FFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/typeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/itemimage"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/playfairdisplaymedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/totalPriceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/typeTextView"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/playfairdisplaymedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/quantityTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/totalPriceTextView"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/playfairdisplaymedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/sellersdeliveryInfoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/quantityTextView"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/playfairdisplaymedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/sellerspaymentStatusTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sellersdeliveryInfoTextView"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/playfairdisplaymedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/sellerphonenumberinfotextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sellerspaymentStatusTextView"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/playfairdisplaymedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/paymentStatusTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sellerphonenumberinfotextview"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/playfairdisplaymedium"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/textviewlinearlayout"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/payOrderButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/playfairdisplaymedium"
+                    android:text="@string/pay_order"
+                    android:textColor="#1565C0"/>
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/playfairdisplaymedium"
+                    android:text="@string/cancel_order"
+                    android:textColor="#1565C0"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

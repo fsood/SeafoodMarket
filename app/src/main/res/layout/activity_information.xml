@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@drawable/custom_rectangle" />
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/app_name"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_back" />
+
+    <!-- Header TextView -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/playfairdisplaymediumitalic"
+        android:text="@string/welcome_dashboard"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:fontFamily="@font/playfairdisplaymedium"
+        android:textColor="@color/sea_blue"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Content TextView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/textviewlinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="20dp"
+            android:background="#F0FFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewContent"
+                android:layout_width="373dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/playfairdisplayregular"
+                android:padding="16dp"
+                android:text="@string/content"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

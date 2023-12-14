@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Test"
+        tools:targetApi="31">
+        <activity
+            android:name=".dashboardbuyer.MpesaPaybill"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardseller.OrderManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardbuyer.OrderStatusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardseller.SeafoodListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardseller.MainActivitySeller"
+            android:exported="false" />
+        <activity
+            android:name=".recipes.FullRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recipes.RecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".welcome.CleaningTipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".welcome.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".welcome.InformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardbuyer.FindBoatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardbuyer.MakeOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardbuyer.FindMarketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardbuyer.FindSeaFood"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardseller.PostSeafood"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".dashboardbuyer.MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

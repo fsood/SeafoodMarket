@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- list_item_recipe.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/recipeImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_image" /> <!-- Placeholder image -->
+
+    <TextView
+        android:id="@+id/recipeNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/recipeImageView"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:textColor="@color/darkgrey"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Add other TextViews for additional recipe details if needed -->
+
+</RelativeLayout>

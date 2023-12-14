@@ -1,0 +1,36 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img">
+
+    <!-- Top bar -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@drawable/custom_rectangle" />
+
+    <LinearLayout
+        android:id="@+id/textviewlinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="9dp"
+        android:layout_below="@id/view"
+        android:layout_marginEnd="20dp"
+        android:background="#F0FFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mpesatextViewContent"
+            android:layout_width="373dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/playfairdisplayregular"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <!-- Add more TextViews if needed -->
+    </LinearLayout>
+
+</RelativeLayout>

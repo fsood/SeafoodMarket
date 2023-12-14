@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">test place</string>
+
+    <string name="find_fish">Find Seafood</string>
+    <string name="post_fish">Post Seafood</string>
+    <string name="recipes">Recipes</string>
+    <string name="name">Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="availability">Quantity in Kg</string>
+    <string name="delivery_info">Delivery Info</string>
+    <string name="price">Price</string>
+    <string name="location">Location</string>
+    <string name="vendor_name">Vendor Name</string>
+    <string name="set_location">Set Location</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="post_seafood">Post Seafood</string>
+    <string name="select_fish_type">Select Fish type</string>
+    <string name="category_pizza">Category : Pizza</string>
+    <string name="area_palestine">Area : Palestine</string>
+    <string name="instructions">-Instructions:</string>
+    <string name="fish_store">Fish Store</string>
+    <string name="payment_methods">Select Method of Payment</string>
+    <string name="photo_viewed">photo viewed</string>
+    <string name="meal_name">Meal Name:</string>
+    <string name="meal_id">Meal ID:</string>
+    <string name="find_seafood">Find Seafood</string>
+    <string name="market">Market</string>
+    <string name="boat">BOAT</string>
+    <string name="availabilityoffish">Availability:</string>
+    <string name="sellername">Seller:</string>
+    <string name="fishavailability">Availability:</string>
+    <string name="fishlocation">Location:</string>
+    <string name="amount_kg">Price/kg:</string>
+    <string name="type">Type:</string>
+    <string name="make_order">Make Order</string>
+    <string name="select_cleaning_tips">Select cleaning tips</string>
+    <string name="CuttingandCleaning">Cutting and Cleaning</string>
+    <string name="what_is_fishstore">1. What is Fishstore?</string>
+    <string name="welcome">Welcome</string>
+    <string name="how_to_post_local_seafood">2. How to Post Local Seafood</string>
+    <string name="cleaning_and_cutting_tips">3. Cleaning and Cutting Tips</string>
+    <string name="how_to_clean_a_fish_tips_and_warnings">HOW TO CLEAN A FISH: TIPS AND WARNINGS</string>
+    <string name="content">Content</string>
+    <string name="title">Title</string>
+    <string name="how_to_clean_a_fish_steps">HOW TO CLEAN A FISH: STEPS</string>
+    <string name="Login">Login</string>
+    <string name="password">Password</string>
+    <string name="already_registered_login">Already registered? Login</string>
+    <string name="register_acc">Not yet registered? Register</string>
+    <string name="firstname">first name</string>
+    <string name="register">Register</string>
+    <string name="re_type_password">Confirm password</string>
+    <string name="manage">Seafood List</string>
+    <string name="orders">Order Management</string>
+    <string name="myorders">My Orders</string>
+    <string name="welcome_dashboard">Welcome</string>
+    <string name="order">My Orders</string>
+    <string name="myseafood">Seafood List</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="pay_order">Pay Order</string>
+    <string name="confirm_order">Confirm Payment</string>
+    <string name="mpesa_paybill">M-Pesa Paybill</string>
+
+
+    <string-array name="fish_types">
+        <item>Tuna</item>
+        <item>Salmon</item>
+        <item>Shrimp</item>
+        <!-- Add more fish types as needed -->
+    </string-array>
+
+    <string-array name="source_options">
+        <item>From Boat</item>
+        <item>From Market</item>
+    </string-array>
+
+    <string-array name="payment_methods">
+        <item>Cash on delivery</item>
+        <item>Credit</item>
+    </string-array>
+
+    <string-array name="user_types">
+        <item>Buyer</item>
+        <item>Seller</item>
+    </string-array>
+</resources>

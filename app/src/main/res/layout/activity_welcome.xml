@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/first_view2"
+        android:layout_width="426dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="560dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Back Button -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/custom_rectangle" />
+
+    <ImageButton
+        android:id="@+id/backB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/app_name"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_back" />
+
+    <!-- Header TextView -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/playfairdisplaymediumitalic"
+        android:text="@string/welcome_dashboard"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewFishstore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/what_is_fishstore"
+        android:textSize="20sp"
+        android:fontFamily="@font/playfairdisplaymedium"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:textStyle="bold"
+        android:background="?android:attr/selectableItemBackground" />
+
+    <TextView
+        android:id="@+id/textViewPostSeafood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_to_post_local_seafood"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:fontFamily="@font/playfairdisplaymedium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewFishstore"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/selectableItemBackground" />
+
+    <TextView
+        android:id="@+id/textViewCleaningTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cleaning_and_cutting_tips"
+        android:textSize="20sp"
+        android:fontFamily="@font/playfairdisplaymedium"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:layout_below="@id/textViewPostSeafood"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/selectableItemBackground" />
+
+</RelativeLayout>

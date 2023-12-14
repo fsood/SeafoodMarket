@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img">
+
+
+    <!-- Your Header View -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@drawable/custom_rectangle" />
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/app_name"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_back" />
+
+    <!-- Header TextView -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/playfairdisplaymediumitalic"
+        android:letterSpacing="0.025"
+        android:text="@string/CuttingandCleaning"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <!-- ScrollView -->
+    <ScrollView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp">
+
+        <!-- LinearLayout for Steps and Tips/Warnings -->
+        <LinearLayout
+            android:id="@+id/Scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <!-- Steps Section -->
+
+            <TextView
+                android:id="@+id/textViewStepsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/how_to_clean_a_fish_steps"
+                android:fontFamily="@font/playfairdisplaymedium"
+                android:textColor="@color/sea_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewStepsInstructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/playfairdisplayregular"
+                android:textColor="@color/darkgrey"
+                android:textSize="16sp" />
+
+            <!-- Tips and Warnings Section -->
+            <TextView
+                android:id="@+id/textViewTipsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/how_to_clean_a_fish_tips_and_warnings"
+                android:textColor="@color/sea_blue"
+                android:fontFamily="@font/playfairdisplaymedium"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewTipsWarnings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="@font/playfairdisplayregular"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
